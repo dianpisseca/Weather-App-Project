@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles/css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="search-city">
+          <div class="search-group">
+            <span class="material-symbols-outlined">search</span>
+            <input
+              id="search-bar"
+              type="search"
+              placeholder="Enter a city ..."
+              required
+              autofocus
+            />
+          </div>
+          <input type="submit" class="submit-button" value="Search" />
+        </div>
+        <div class="city">Sydney</div>
+        <div class="highlighted desc">
+          <span class="current-time"></span>, Partly Cloudy
+        </div>
+        <div class="information desc">Precipitation: 13%</div>
+        <div class="information desc">Humidity: 79%</div>
+        <div class="information desc">Wind: 5km/h</div>
+        <div class="current-temp">
+          <span class="material-symbols-outlined">partly_cloudy_day</span>
+          <div class="current-degrees">15°C</div>
+        </div>
+        <div class="week-temp">
+          <ul>
+            <li class="sat-1 box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"
+                  >partly_cloudy_day</span
+                ><br />Sat</span
+              ><br />
+              <span class="high-temp">26°</span>
+              15°
+            </li>
+            <li class="sun box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"> rainy </span
+                ><br />Sun</span
+              ><br />
+              <span class="high-temp">22°</span> 16°
+            </li>
+            <li class="mon box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"> sunny </span
+                ><br />Mon</span
+              ><br />
+              <span class="high-temp">22°</span> 10°
+            </li>
+            <li class="tue box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"
+                  >partly_cloudy_day</span
+                ><br />Tue</span
+              ><br />
+              <span class="high-temp">22°</span> 16°
+            </li>
+            <li class="wed box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"> rainy </span
+                ><br />Wed</span
+              ><br />
+              <span class="high-temp">26°</span> 13°
+            </li>
+            <li class="thu box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"
+                  >partly_cloudy_day</span
+                ><br />Thu</span
+              ><br />
+              <span class="high-temp">21°</span> 12°
+            </li>
+            <li class="fri box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"> sunny </span
+                ><br />Fri</span
+              ><br />
+              <span class="high-temp">26°</span> 16°
+            </li>
+            <li class="sat-2 box">
+              <span class="days"
+                ><span class="material-symbols-outlined" id="icon"
+                  >partly_cloudy_day</span
+                ><br />Sat</span
+              ><br />
+              <span class="high-temp">22°</span> 12°
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          Coded by
+          <a href="https://www.linkedin.com/in/dianpisseca/">Dian Pisseca</a>
+        </div>
+      </form>
+    </div>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
